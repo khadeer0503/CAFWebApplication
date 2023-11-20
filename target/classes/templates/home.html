@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>User Management System</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<script type="text/javascript" th:href="@{/js/script.js}"></script>
+
+
+</head>
+
+<body>
+	<section class="pic d-flex justify-content-center align-items-center bg-light">
+<!--	<section>-->
+<!--			<div class="sidebar">-->
+<!--						<a class="nav-link active"-->
+<!--						aria-current="page"-->
+<!--						 th:href="@{/}"><i class="fa-solid fa-house" style="color: #ffffff;"></i>    Home   </a>-->
+<!--						<a class="nav-link" th:href="@{/manage}">-->
+<!--						<i class="fa-solid fa-list" style="color: #fafafa;"></i>     Users-List</a>-->
+<!--						<a class="nav-link" th:href="@{/addnewuser}">-->
+<!--						<i class="fa-solid fa-user-plus" style="color: #fafafa;"></i>     Add New User</a>-->
+<!--						-->
+<!--					</div>					-->
+		<div class="container bg-light">
+			<div align="center"> 
+
+				<!-- 			<div class="image"> -->
+				<!-- 				<img src="/contact2.png" class="img-fluid" alt="..."> -->
+				<!-- 			</div> -->
+				
+
+<!--<div class="content">-->
+				<div class="container justify-content-md-center mt-2">
+					<h1>Welcome to User Management System</h1>
+				</div>
+
+	<!--******************************************************************************************************************************* -->
+		<div class="HomeLayout">
+			<div class="container m-2 p-2 "> <!--"border border-primary rounded-3 bg-primary bg-gradient " > -->
+				<div class="row  justify-content-md-center">
+				
+					<div class="col mt-3">
+						<div class="card" style="width: 18rem;">
+					  <img th:src="@{/images/INPS.jpg}" class="card-img-top" alt="inps.it" style="height: 20vh;" /> 
+  						 <div class="card-body">
+							<h5 class="card-title">INPS</h5>
+							<p class="card-text">L'Istituto nazionale della previdenza sociale, meglio conosciuto con l'acronimo INPS,
+								 il principale ente previdenziale del sistema pensionistico pubblico italiano,<span id="dots">...</span><span id="more">
+								presso cui debbono essere obbligatoriamente iscritti tutti i lavoratori dipendenti pubblici o privati e la maggior parte dei lavoratori autonomi,
+								che non abbiano una propria cassa previdenziale autonoma. L'INPS è sottoposto alla vigilanza del Ministero del lavoro e delle politiche sociali.</span></p>
+<!--							 <p onclick="myFunction()" id="myBtn">Read more</p>  tried readmore but doesn't work even included css and js -->
+							<a href="https://www.inps.it/"target="_blank" class="btn btn-primary"> <<< Go >>></a>
+						</div>
+					</div>
+					</div>
+					
+					
+					
+					<div class="col mt-3">
+						<div class="card" style="width: 18rem;">
+					  <img th:src="@{/images/Logo_Agenzia_Entrate.png}" class="card-img-top p-5" alt="agenzia del entrate.it" style="height: 25vh;"/>
+  						 <div class="card-body">
+							<h5 class="card-title">Agenzia Del Entrate</h5>
+							<p class="card-text">L'Agenzia delle entrate un'agenzia fiscale della pubblica amministrazione italiana dipendente dal Ministero dell'economia e delle finanze<span id="dots">...</span><span id="more">
+								che svolge le funzioni relative ad accertamenti e controlli fiscali e alla gestione dei tributi.</span></p>
+							<a href="https://www.agenziaentrate.gov.it/portale/" target="_blank" class="btn btn-primary"> <<< Go >>></a>
+						</div>
+					</div>
+					</div>
+					
+					
+					
+					<div class="col mt-3">
+						<div class="card" style="width: 18rem;">
+					  <img th:src="@{/images/ministro del lavoro.jpeg}" class="card-img-top p-4" alt="agenzia del entrate.it"
+					  	 style="height: 25vh;margin-right:auto;width:60%;margin-left:auto;" />
+  						 <div class="card-body">
+							<h5 class="card-title">Ministro del lavoro</h5>
+							<p class="card-text">Il Ministero del lavoro e delle politiche sociali  un dicastero del governo italiano.</p>
+							<a href="https://www.lavoro.gov.it/ministro-e-ministero/ministro/Pagine/default" target="_blank" class="btn btn-primary"> <<< Go >>></a>
+						</div>
+					</div>
+					</div>
+					
+					
+					
+					<div class="col mt-5">
+						<div class="card" style="width: 18rem;">
+					  <img th:src="@{/images/prefettura.jpeg}" class="card-img-top p-4" alt="agenzia del entrate.it" 
+					  	style="height: 25vh;margin-right:auto;width:60%;margin-left:auto;" />
+  						 <div class="card-body">
+							<h5 class="card-title">Prefettura</h5>
+							<p class="card-text">Le prefetture ? Uffici territoriali del governo svolgono sul territorio un?azione propulsiva. </p>
+							<a href="https://portaleservizi.dlci.interno.it/" target="_blank" class="btn btn-primary"> <<< Go >>></a>
+						</div>
+					</div>
+					</div>
+					
+					
+					
+					<div class="col mt-5">
+						<div class="card" style="width: 18rem;">
+					  <img th:src="@{/images/SPID-Poste-Italiane.jpg}" class="card-img-top p-3" alt="agenzia del entrate.it" style="height: 25vh;" />
+  						 <div class="card-body">
+							<h5 class="card-title">SPID</h5>
+							<p class="card-text">Do you want to create your Digital Identity?</br>
+							The Poste Italiane Digital Identity to access Poste Italiane and Public Administration services</p>
+							<a href="https://posteid.poste.it/" target="_blank" class="btn btn-primary"> <<< Go >>></a>
+						</div>
+					</div>
+					</div>
+					
+					
+					
+					<div class="col mt-5">
+						<div class="card" style="width: 18rem;">
+					  <img th:src="@{/images/Namirial.png}" class="card-img-top p-3" alt="agenzia del entrate.it" 
+					  		style="height: 25vh;margin-right:auto;width:60%;margin-left:auto;" />
+  						 <div class="card-body">
+							<h5 class="card-title">Namirial</h5>
+							<p class="card-text">Get your Personal SPID in just a few minutes with Namirial and access all the most important institutional platforms with maximum security.</p>
+							<a href="https://www.namirial.it/spid/spid-personale/" target="_blank" class="btn btn-primary"> <<< Go >>></a>
+						</div>
+					</div>
+					</div>
+					
+					
+				
+					
+				</div><!-- row ends -->
+
+
+			</div> <!-- inside container ends -->
+
+		</div><!-- HomeLayout ends -->
+
+<!--******************************************************************************************************************************* -->
+</div> <!-- content ends -->
+
+			</div>
+		</div> 	<!-- outside container ends -->
+
+	</section>
+</body>
+
+</html>

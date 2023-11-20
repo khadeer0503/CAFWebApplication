@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+<head>
+<meta charset="ISO-8859-1">
+<title th:text="${title}">base page</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+<!--     NAV BAR -->
+
+	<nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-primary">
+
+		<div class="container">
+
+			<a class="navbar-brand" href="#" th:href="@{/}">
+				<i class="fa-solid fa-dragon fa-xl "></i>	UserManagement System</a>
+
+			<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarScroll"
+					aria-controls="navbarScroll"
+					aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+<!--			<button class="navbar-toggler" type="button"-->
+<!--				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"-->
+<!--				aria-controls="navbarSupportedContent" aria-expanded="false"-->
+<!--				aria-label="Toggle navigation">-->
+<!--				<span class="navbar-toggler-icon"></span>-->
+<!--			</button>-->
+
+			<div class="collapse navbar-collapse"  id="navbarScroll"> <!-- id="navbarSupportedContent"> -->
+
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase navbar-nav-scroll" style="--bs-scroll-height: 100%;">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page"
+						 th:href="@{/}"><i class="fa-solid fa-house fa-beat-fade" style="color: #ffffff;"></i>    Home   </a></li>
+						
+					<li class="nav-item"><a class="nav-link" th:href="@{/manage}">
+						<i class="fa-solid fa-list fa-beat-fade" style="color: #fafafa;"></i>     Users-List</a>
+					</li>
+
+<!-- 					<li class="nav-item"><a class="nav-link " tabindex="-1" -->
+<!-- 						aria-disabled="true">Logout</a></li> -->
+
+<!-- 					<li class="nav-item"><a class="nav-link " tabindex="-1" -->
+<!-- 						href="#" aria-disabled="true">SignUp</a></li> -->
+
+				</ul>
+				
+<!-- 				 <form class="d-flex"> -->
+<!--         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+       
+<!--         <button class="btn btn-outline-info color:white" type="submit">Search</button> -->
+<!--       </form> -->
+
+			</div>
+		</div>
+	</nav>
+
+
+	<!--     END OF NAV BAR -->
+	
+<!--	<div class="sidebar">-->
+<!--						<a class="nav-link active"-->
+<!--						aria-current="page"-->
+<!--						 th:href="@{/}"><i class="fa-solid fa-house" style="color: #ffffff;"></i>    Home   </a>-->
+<!--						<a class="nav-link" th:href="@{/manage}">-->
+<!--						<i class="fa-solid fa-list" style="color: #fafafa;"></i>     Users-List</a>-->
+<!--						<a class="nav-link" th:href="@{/addnewuser}">-->
+<!--						<i class="fa-solid fa-user-plus" style="color: #fafafa;"></i>     Add New User</a>-->
+						
+<!--					</div>	-->
+<!--					<div class="content">-->
+	<div th:replace="${content}"></div>
+	
+<footer class="container-fluid footer bg-primary">
+	<p>Developed by MOHAMMED KHADEERUDDIN</p>
+</footer>
+</body>
+</html>
