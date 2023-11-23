@@ -71,7 +71,7 @@ body{
 	/*background:linear-gradient(rgb(192, 192, 192),#e2e2e2);*/
 	zoom: 0.8;
 	overflow: hidden;
-	margin-bottom:30vh;
+	margin-bottom:30vh !important;
 }
 @media screen and (min-width: 1200px ) {
   .HomeLayout {
