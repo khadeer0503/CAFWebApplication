@@ -72,9 +72,15 @@ body{
 	zoom: 0.8;
 	overflow: hidden;
 	margin-bottom:30vh;
-	
 }
-
+@media screen and (min-width: 1200px ) {
+  .HomeLayout {
+    width: 100%;
+    height: auto;
+    position: relative;
+	margin:25px 0px;
+  }
+}
 .footer{
 	padding:15px;
 	text-align: center;
